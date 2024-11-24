@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background for mystery theme */
+    color: #f4f4f4; /* Light text for readability */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #f39c12; /* Highlight logo color */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom: 2px solid #f39c12;
+}
+
+/* Timeline Section */
+section#timeline {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2a2a2a; /* Subtle contrast for section */
+    border-top: 5px solid #f39c12;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #f39c12; /* Section title color */
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.timeline-item {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 700px;
+    text-align: left;
+    color: #f4f4f4;
+    width: 100%;
+    box-sizing: border-box; /* Ensure proper size calculation */
+}
+
+/* Prevent image overflow */
+.timeline-item img {
+    width: 100%; /* Make sure the images scale with the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for consistency */
+    object-fit: cover; /* Ensures image doesn't stretch or overflow */
+}
+
+.timeline-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.timeline-details {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    .timeline-item {
+        width: 90%;
+    }
+}

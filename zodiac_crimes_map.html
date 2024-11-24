@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e8bcb275c51c5a38acc3cc59ef65cb3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9e8bcb275c51c5a38acc3cc59ef65cb3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9e8bcb275c51c5a38acc3cc59ef65cb3 = L.map(
+                "map_9e8bcb275c51c5a38acc3cc59ef65cb3",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2798a6580f82ae9d899e70725608e750 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2798a6580f82ae9d899e70725608e750.addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+            var marker_5ef6bb991469480690e8bc8829de1623 = L.marker(
+                [38.1232, -122.2447],
+                {}
+            ).addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+        var popup_55e75c0e1b5cdafa83f70d2c58ddfdf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f44bb916b42c10ad89d1c080cfbe2a2 = $(`<div id="html_6f44bb916b42c10ad89d1c080cfbe2a2" style="width: 100.0%; height: 100.0%;">Lake Herman Road</div>`)[0];
+                popup_55e75c0e1b5cdafa83f70d2c58ddfdf3.setContent(html_6f44bb916b42c10ad89d1c080cfbe2a2);
+            
+        
+
+        marker_5ef6bb991469480690e8bc8829de1623.bindPopup(popup_55e75c0e1b5cdafa83f70d2c58ddfdf3)
+        ;
+
+        
+    
+    
+            var marker_5cd5960aaa134d3a7961d07747796270 = L.marker(
+                [38.1506, -122.2353],
+                {}
+            ).addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+        var popup_a0c30367602afc0a3ab99de12fb41609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7590898f12584cad989fdf22609bb4e8 = $(`<div id="html_7590898f12584cad989fdf22609bb4e8" style="width: 100.0%; height: 100.0%;">Blue Rock Springs Park</div>`)[0];
+                popup_a0c30367602afc0a3ab99de12fb41609.setContent(html_7590898f12584cad989fdf22609bb4e8);
+            
+        
+
+        marker_5cd5960aaa134d3a7961d07747796270.bindPopup(popup_a0c30367602afc0a3ab99de12fb41609)
+        ;
+
+        
+    
+    
+            var marker_40105b9bcb97aac741fec07f6feb8106 = L.marker(
+                [38.2943, -122.2276],
+                {}
+            ).addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+        var popup_c76f36bd9ff455f7c76fec0e124aaa4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21723d5a86acca70c711fd641665ca8a = $(`<div id="html_21723d5a86acca70c711fd641665ca8a" style="width: 100.0%; height: 100.0%;">Lake Berryessa</div>`)[0];
+                popup_c76f36bd9ff455f7c76fec0e124aaa4e.setContent(html_21723d5a86acca70c711fd641665ca8a);
+            
+        
+
+        marker_40105b9bcb97aac741fec07f6feb8106.bindPopup(popup_c76f36bd9ff455f7c76fec0e124aaa4e)
+        ;
+
+        
+    
+    
+            var marker_2a7eed4c665146ef8c99245a6404183c = L.marker(
+                [33.9736, -117.3693],
+                {}
+            ).addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+        var popup_b0b996300abb8650b7ce97d2b41b7878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f3f736d1b3f551f535824c6ab1cfca8 = $(`<div id="html_6f3f736d1b3f551f535824c6ab1cfca8" style="width: 100.0%; height: 100.0%;">Riverside</div>`)[0];
+                popup_b0b996300abb8650b7ce97d2b41b7878.setContent(html_6f3f736d1b3f551f535824c6ab1cfca8);
+            
+        
+
+        marker_2a7eed4c665146ef8c99245a6404183c.bindPopup(popup_b0b996300abb8650b7ce97d2b41b7878)
+        ;
+
+        
+    
+    
+            var marker_35c5c5110bf62e400240f477edfef8b2 = L.marker(
+                [37.7987, -122.448],
+                {}
+            ).addTo(map_9e8bcb275c51c5a38acc3cc59ef65cb3);
+        
+    
+        var popup_cbeeae4338ba85595862e4a19d4e27e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1797b01e3a70f0f0d925caa651ad72c7 = $(`<div id="html_1797b01e3a70f0f0d925caa651ad72c7" style="width: 100.0%; height: 100.0%;">Presidio Heights</div>`)[0];
+                popup_cbeeae4338ba85595862e4a19d4e27e8.setContent(html_1797b01e3a70f0f0d925caa651ad72c7);
+            
+        
+
+        marker_35c5c5110bf62e400240f477edfef8b2.bindPopup(popup_cbeeae4338ba85595862e4a19d4e27e8)
+        ;
+
+        
+    
+</script>
+</html>

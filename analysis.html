@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="analysis.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Zodiac Killer Investigation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="analysis.html" class="active">Analysis</a></li>
+                    <li><a href="suspect.html">Suspects</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Analysis Section -->
+    <section id="analysis">
+        <h2>Visual Analysis</h2>
+        <div class="analysis-grid">
+            <div class="analysis-item">
+                <h3>Geographical Locations of Attacks</h3>
+                <img src="Geographical_locations.png" alt="Geographical Locations of Attacks">
+            </div>
+            <div class="analysis-item">
+                <h3>Age Distribution</h3>
+                <img src="age_distribution.png" alt="Age Distribution">
+            </div>
+            <div class="analysis-item">
+                <h3>Attack Count Over Time</h3>
+                <img src="attack_count_over_time.png" alt="Attack Count Over Time">
+            </div>
+            <div class="analysis-item">
+                <h3>Correlation Matrix</h3>
+                <img src="correlation_matrix.png" alt="Correlation Matrix">
+            </div>
+            <div class="analysis-item">
+                <h3>Gender Age Distribution</h3>
+                <img src="gender_age_distribution.png" alt="Gender Age Distribution">
+            </div>
+            <div class="analysis-item">
+                <h3>Gender vs. Outcome</h3>
+                <img src="gender_vs_outcome.png" alt="Gender vs. Outcome">
+            </div>
+            <div class="analysis-item">
+                <h3>Weapon by Location</h3>
+                <img src="weapon_by_location.png" alt="Weapon by Location">
+            </div>
+            <div class="analysis-item">
+                <h3>Investigative Outcome</h3>
+                <img src="Investigative_Outcome.png" alt="Investigative Outcome">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zodiac Killer Investigation. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Enlarged Images -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-container">
+            <div id="caption"></div>
+            <img class="modal-content" id="modal-image" alt="Modal Image">
+        </div>
+    </div>
+
+    <script src="analysis.js"></script>
+</body>
+</html>

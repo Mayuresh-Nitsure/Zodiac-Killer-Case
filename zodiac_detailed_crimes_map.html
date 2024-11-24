@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f0e63820b864f5f9236cf99682943792 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f0e63820b864f5f9236cf99682943792" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f0e63820b864f5f9236cf99682943792 = L.map(
+                "map_f0e63820b864f5f9236cf99682943792",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7ea62b341d2ffcdf4b93315b1151f65 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f7ea62b341d2ffcdf4b93315b1151f65.addTo(map_f0e63820b864f5f9236cf99682943792);
+        
+    
+            var marker_cluster_f55d810515cdac95ed2c7466c51f1766 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_6f54f17df8a0e85b92fd233ffa9f345a = L.marker(
+                [38.1232, -122.2447],
+                {}
+            ).addTo(marker_cluster_f55d810515cdac95ed2c7466c51f1766);
+        
+    
+            var icon_8fb8bef297bad4866a45f9f02f0086ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6f54f17df8a0e85b92fd233ffa9f345a.setIcon(icon_8fb8bef297bad4866a45f9f02f0086ab);
+        
+    
+        var popup_9580c5fb9a44eb8eed9961b77fa2535b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e5b4e880c9393284497036cc4f622a4 = $(`<div id="html_8e5b4e880c9393284497036cc4f622a4" style="width: 100.0%; height: 100.0%;">Lake Herman Road<br>First confirmed Zodiac attack, two victims shot in a car.</div>`)[0];
+                popup_9580c5fb9a44eb8eed9961b77fa2535b.setContent(html_8e5b4e880c9393284497036cc4f622a4);
+            
+        
+
+        marker_6f54f17df8a0e85b92fd233ffa9f345a.bindPopup(popup_9580c5fb9a44eb8eed9961b77fa2535b)
+        ;
+
+        
+    
+    
+            var marker_e2bf40e993ba0ad879c1f25d29556561 = L.marker(
+                [38.1506, -122.2353],
+                {}
+            ).addTo(marker_cluster_f55d810515cdac95ed2c7466c51f1766);
+        
+    
+            var icon_af91624a89c6e6bc6f85f669150926d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e2bf40e993ba0ad879c1f25d29556561.setIcon(icon_af91624a89c6e6bc6f85f669150926d3);
+        
+    
+        var popup_3fe443f6cd12975061bef21a244f91a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8551a82a9f03ad102fb488d725e8b5b = $(`<div id="html_c8551a82a9f03ad102fb488d725e8b5b" style="width: 100.0%; height: 100.0%;">Blue Rock Springs Park<br>Second attack, survivor provided suspect description.</div>`)[0];
+                popup_3fe443f6cd12975061bef21a244f91a8.setContent(html_c8551a82a9f03ad102fb488d725e8b5b);
+            
+        
+
+        marker_e2bf40e993ba0ad879c1f25d29556561.bindPopup(popup_3fe443f6cd12975061bef21a244f91a8)
+        ;
+
+        
+    
+    
+            var marker_48ce9d80d9c54a92085a2cd4e8724c24 = L.marker(
+                [38.2943, -122.2276],
+                {}
+            ).addTo(marker_cluster_f55d810515cdac95ed2c7466c51f1766);
+        
+    
+            var icon_fc2f859c744d7fb7650996d3adfec80b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_48ce9d80d9c54a92085a2cd4e8724c24.setIcon(icon_fc2f859c744d7fb7650996d3adfec80b);
+        
+    
+        var popup_0e82211688c507d39d735d1b2c955187 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a465d5350b506c7a166a0c73a908cef = $(`<div id="html_9a465d5350b506c7a166a0c73a908cef" style="width: 100.0%; height: 100.0%;">Lake Berryessa<br>Victims stabbed while relaxing, Zodiac wore hood and glasses.</div>`)[0];
+                popup_0e82211688c507d39d735d1b2c955187.setContent(html_9a465d5350b506c7a166a0c73a908cef);
+            
+        
+
+        marker_48ce9d80d9c54a92085a2cd4e8724c24.bindPopup(popup_0e82211688c507d39d735d1b2c955187)
+        ;
+
+        
+    
+    
+            var marker_e94e5a252d33d1d8af4fe82c94407560 = L.marker(
+                [33.9736, -117.3693],
+                {}
+            ).addTo(marker_cluster_f55d810515cdac95ed2c7466c51f1766);
+        
+    
+            var icon_a32986d8c45f9d152070b0a299860ee8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e94e5a252d33d1d8af4fe82c94407560.setIcon(icon_a32986d8c45f9d152070b0a299860ee8);
+        
+    
+        var popup_623bd3153e82c4fd28a60db46119027d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8850d597ad63b68b52a628b3029f8c5e = $(`<div id="html_8850d597ad63b68b52a628b3029f8c5e" style="width: 100.0%; height: 100.0%;">Riverside<br>Cheri Jo Bates found dead; Zodiac letters linked but unproven.</div>`)[0];
+                popup_623bd3153e82c4fd28a60db46119027d.setContent(html_8850d597ad63b68b52a628b3029f8c5e);
+            
+        
+
+        marker_e94e5a252d33d1d8af4fe82c94407560.bindPopup(popup_623bd3153e82c4fd28a60db46119027d)
+        ;
+
+        
+    
+    
+            var marker_0d2bdde4b4e43ba87a68ff5c49977f5f = L.marker(
+                [37.7987, -122.448],
+                {}
+            ).addTo(marker_cluster_f55d810515cdac95ed2c7466c51f1766);
+        
+    
+            var icon_21db1888956e72b5bacd1693da03286f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0d2bdde4b4e43ba87a68ff5c49977f5f.setIcon(icon_21db1888956e72b5bacd1693da03286f);
+        
+    
+        var popup_e36a2f39ddab996abb1c2e5e4ff070c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf033e1e967bd79d05eb1cf07837be81 = $(`<div id="html_cf033e1e967bd79d05eb1cf07837be81" style="width: 100.0%; height: 100.0%;">Presidio Heights<br>Paul Stine, a cab driver, shot and Zodiac interacted with police nearby.</div>`)[0];
+                popup_e36a2f39ddab996abb1c2e5e4ff070c5.setContent(html_cf033e1e967bd79d05eb1cf07837be81);
+            
+        
+
+        marker_0d2bdde4b4e43ba87a68ff5c49977f5f.bindPopup(popup_e36a2f39ddab996abb1c2e5e4ff070c5)
+        ;
+
+        
+    
+    
+            marker_cluster_f55d810515cdac95ed2c7466c51f1766.addTo(map_f0e63820b864f5f9236cf99682943792);
+        
+</script>
+</html>
